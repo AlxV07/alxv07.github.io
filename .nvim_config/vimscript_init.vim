@@ -37,7 +37,8 @@ set wildmode=list:longest
 
 " === C++ ===
 " auto-bracket
-inoremap { {<CR>}<Esc>ko  
+"inoremap { {<CR>}<Esc>ko  
+inoremap { {}<Esc>ha
 " default for loop
 nnoremap Zf ifor (int i = 0; i < N; i++)<Esc>
 " int pair
