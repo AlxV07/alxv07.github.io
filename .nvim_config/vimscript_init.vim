@@ -1,17 +1,12 @@
 " === General ===
-"colorscheme desert
 set history=100
 set number
 filetype on
 syntax on
 
-set background=dark 
-if has('termguicolors')
-	set termguicolors
-endif
-"let g:everforest_background = 'hard' "'medium'=default 
-let g:everforest_better_performance = 1 
-packadd! everforest 
+set background=light
+set termguicolors
+let g:everforest_better_performance = 1
 colorscheme everforest
 
 " === Coding ===
