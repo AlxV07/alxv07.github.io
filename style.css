@@ -36,7 +36,7 @@ h4 {
 header {
     padding: 20px;
     text-align: center;
-    background: radial-gradient(circle, #818181 0%, #343434 70%);
+    background: #818181;
     width: 100%;
     display: flex;
     justify-content: center;
