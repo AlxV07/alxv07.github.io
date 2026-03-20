@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" sizes="16x16 32x32 64x64" href="imgs/GlaucusProfile.png">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="imgs/PagewoodParkPFP.jpg">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8RSL65KCL"></script>
     <script>
@@ -14,151 +14,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Kai Chen - About Me</title>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css?v=1.1">
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css?v=2.0">
 </head>
 <body>
 
-<div id="bg"></div>
-
 <header>
-    <div class="header-container">
-        <a id="title" href="#">Alexander Kai Chen</a>
-        <div id="pfp-container">
-            <img class="pfp" src="/imgs/GlaucusProfile.png" alt="ProfilePicture">
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Alexander Kai Chen</a>
+        <div class="nav-links">
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#honors" class="nav-link">Honors</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#blog" class="nav-link">Blog</a>
         </div>
-    </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
 </header>
 
-<nav>
-    <div class="nav-left nav-a"><a class="nav-a" style="margin: 0; padding: 0" href="/">Alexander Kai Chen</a></div>
-    <div class="nav-center">
-        <a class="nav-a" href="#about" >About</a>
-        <a class="nav-a" href="#accomplishments">Accomplishments</a>
-        <a class="nav-a" href="#activities">Activities</a>
-        <a class="nav-a" href="#connect">Connect</a>
-        <a class="nav-a" href="#blog">Blog</a>
-    </div>
-    <a class="nav-a nav-right" href="#">To Top (↑)</a>
-</nav>
-
-<section id="about">
-    <br><a class="section-title" href="#about">About</a><br><br>
-
-    Hello! I'm Alex, a <code id="age-code-block"></code>-year-old studying C.S. + AI.
-
-    <br><br>
-
-    I have experience in software engineering, algorithms and data structures, and AI (Agentic LRMs + NLP, Distributed Learning, XAI).
-    I have been programming for ~<code id="prog-age-code-block"></code> years in
-    Python, Java, and C++, and am also familiar with Swift, Lisp, and Prolog.
-    I enjoy working in a JetBrains IDE + IdeaVim, and am familiar with full-stack development.
-
-    <br><br>
-
-    I live in Dallas, Texas, and homeschool with Mother of Divine Grace School.
-    I enjoy competitive programming, speech and debate, playing chess, and studying Latin.
-    I also used to play ice hockey, but I have a little sister who plays AAA Boys on the Dallas Stars Elite
-    (<a href="https://www.youtube.com/@minachenhockeyplayer/shorts">Her YouTube Channel</a>).
-
-    <br><br>
-
-    Feel free to reach out about anything - I'd be glad to connect!
-    <div class="page-break"></div>
-</section>
-
-<section id="accomplishments">
-    <br><a class="section-title" href="#accomplishments">Accomplishments</a><br><br>
-    <ul>
-        <li>My first solo research paper, "iOS as Acceleration", was accepted into the NeurIPS 2025 Workshop on Efficient Reasoning in my highschool junior year;
-        I gained invaluable early experience through the double-blind peer reviewing process and workshop.</li>
-
-        <li>I took my first internship ending my highschool sophomore year as an Enterprise Tech Software Engineer @ State Farm for Summer 2025. </li>
-
-        <li>I promoted to the USACO Gold Division in Feb. 2025 as a high school sophomore;
-        the previous year I had promoted to Silver as a freshman in my first USACO contest in Dec. 2023, placing 1022 out of 9707 pre-college competitors worldwide.</li>
-
-        <li>My first NCFCA Team Policy Debate Tournament in Jan. 2024 went well as I went to Quarterfinals w/ my partner William Kuykendall, placing 8th out of ~42 teams overall.
-        The following year I was ranked 2nd Team Policy Speaker out of ~110 competitors at the first National Mixer tournament of the 24-25 season.</li>
-
-        <li>I developed my FRC robotics team's scouting software which went to the World Championships twice, in 2024 and 2025.</li>
-
-        <li>I co-taught the programming section of a local STEM summer camp for underprivileged youths in 2023.</li>
-
-        <li>In 9th grade while reading <a href="https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/">MIT's SICP</a>,
-            I wrote my own Lisp interpreter from scratch <a href="https://github.com/AlxV07/PyLispSICP/tree/main">(PyLisp GitHub)</a>.</li>
-
-        <li>I built a widely-used web application to automatically format evidence for my debate club
-            (<a  href="https://alxv07.github.io/NCFCAAutoEvidencer/">NCFCAAutoEvidencer</a>).</li>
-    </ul>
-    <div class="page-break"></div>
-</section>
-
-<section id="activities">
-    <br><a class="section-title" href="#activities">Activities</a><br><br>
-    <ul>
-        <li><a href="https://www.usaco.org/index.php"> USACO</a>: USA Computing Olympiad - (2023-Present)</li>
-        <li><a href="https://ncfca.org/">NCFCA</a>: National Christian Forensics and Communications Association - (2023-2025)</li>
-        <li><a href="https://coolidgefoundation.org/debate/">Coolidge Debate</a>: Calvin Coolidge Presidential Foundation Debate Program - (2025-Present)</li>
-        <li><a href="https://www.firstinspires.org/robotics/ftc">FTC</a>: FIRST Tech Competition - (2021-2022)</li>
-        <li><a href="https://www.firstinspires.org/robotics/frc">FRC</a>: FIRST Robotics Competition - (2022-2024)</li>
-        <li>CAHA Competitive Travel Ice Hockey: Anaheim Ice Dogs 14u AA - (2021-2022)</li>
-        <li>JVarsity Ice Hockey: Highland Park - (2023-2024)</li>
-    </ul>
-    <div class="page-break"></div>
-</section>
-
-<section id="connect">
-    <br><a class="section-title" href="#connect">Connect</a><br><br>
-    <ul>
-        <li>Email: alexander.kai.chen@gmail.com</li>
-        <li>Discord: @alxv07</li>
-        <li><a href="https://www.linkedin.com/in/alexander-kai-chen-504893267" target="_blank">LinkedIn: https://www.linkedin.com/in/alexander-kai-chen-504893267</a></li>
-        <li><a href="https://x.com/alxv07" target="_blank">Twitter/X: https://x.com/alxv07</a></li>
-        <li><a href="https://github.com/AlxV07" target="_blank">GitHub: https://github.com/AlxV07</a></li>
-        <li><a href="https://openreview.net/profile?id=%7EAlexander_Kai_Chen1" target="_blank">OpenReview: https://openreview.net/profile?id=%7EAlexander_Kai_Chen1</a></li>
-        <li><a href="https://orcid.org/0009-0007-1832-7051" target="_blank">ORCID: https://orcid.org/0009-0007-1832-7051</a></li>
-        <li><a href="https://www.youtube.com/@alxv07" target="_blank">YouTube: https://www.youtube.com/@alxv07</a></li>
-        <li><a href="https://www.chess.com/member/alxv07u" target="_blank">chess.com: https://www.chess.com/member/alxv07u</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCp0pHn4PBhSSaxS0olWIBtHkAVXpJC_5Br3N9dEqeZQi7Zw/viewform?usp=sf_link" target="_blank">Pass Me A Note! (Google Form)</a></li>
-    </ul>
-    <div class="page-break"></div>
-</section>
-
-<section id="blog">
-    <br><a class="section-title" href="#blog">Blog</a><br><br>
-
-    <section class="blog-post blog-toc-section">
-        <h2>Table of Contents</h2>
-        <div>
-            Posts with bolded/italicized titles are more substantial writings; posts with non-bolded titles are casual updates.
-            <br>
-            <br>
-            Posts come out irregularly, but there might be one soon...
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Alexander Kai Chen</h1>
+                <p class="hero-subtitle">Computer Science & AI Student</p>
+                <p class="hero-description">
+                    I'm a software engineer with experience in algorithms, AI research, and full-stack development.
+                    Currently studying Computer Science with a focus on Artificial Intelligence and Machine Learning.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img class="pfp" src="/imgs/PagewoodParkPFP.jpg" alt="Alexander Chen">
+            </div>
         </div>
-        <div class="page-break" style="margin-top: 30px"></div>
-        <br><br>
-        <!--   Add Here   -->
-        <a class="blog-toc substantial-blog" href="/blog/ia_update">11/17/2025 - Camera Ready @ NeurIPS ER Workshop Author's Notes: Project Motivation & Future Work</a><br><br>
-        <a class="blog-toc" href="/blog/ia_first_acceptance">09/23/2025 - iOS as Acceleration accepted @ NeurIPS 2025 Workshop</a><br><br>
-        <a class="blog-toc" href="/blog/summer-2025-update">07/10/2025 - Mid-Summer 2025 Update</a><br><br>
-        <a class="blog-toc" href="/blog/usaco-gold-obtained">03/02/2025 - Promoting To USACO Gold Division</a><br><br>
-        <a class="blog-toc" href="/blog/flint-qualifier2025-tourney">01/22/2025 - Results @ Flint 2025 Qualifier</a><br><br>
-        <a class="blog-toc substantial-blog" href="/blog/ps-ftc1">01/09/2025 - Similarities Between Prefix Sums and The 1st Fundamental Theorem of Calculus</a><br><br>
-        <a class="blog-toc" href="/blog/onlinefall2024-tourney">12/31/2024 - Results @ Fall 2024 National Mixer</a><br><br>
-        <a class="blog-toc" href="/blog/first-internship">11/01/2024 - My First Internship</a><br><br>
-        <a class="blog-toc substantial-blog" href="/blog/utd-ml-vs-xai">09/15/2024 - Studying ML vs. XAI @ UTD ALPS Lab</a><br><br>
-        <a class="blog-toc" href="/blog/presummer-24-update">05/24/2024 - PreSummer Update</a><br><br>
-        <a class="blog-toc" href="/blog/ncfca-regionals-24">05/07/2024 - Strong Conclusion @ Farmers Branch Regional Championship</a><br><br>
-        <a class="blog-toc" href="/blog/ncfca-ft-worth-24">03/20/2024 - 17/61 @ Ft. Worth National Mixer</a><br><br>
     </section>
-</section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Swift</li>
+                    <li>Lisp</li>
+                    <li>Prolog</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Technical Areas</h3>
+                <ul class="skill-list">
+                    <li>Algorithms & Data Structures</li>
+                    <li>Agentic LRMs & NLP</li>
+                    <li>Distributed Learning</li>
+                    <li>Explainable AI (XAI)</li>
+                    <li>Full-Stack Development</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Environments</h3>
+                <ul class="skill-list">
+                    <li>JetBrains IDEs</li>
+                    <li>IdeaVim</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Researcher & Author</h3>
+                    <span class="timeline-company">NeurIPS 2025 Workshop</span>
+                </div>
+                <span class="timeline-date">2025</span>
+                <p>Published "iOS as Acceleration" in the NeurIPS Workshop on Efficient Reasoning during high school junior year.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Enterprise Tech Software Engineer Intern</h3>
+                    <span class="timeline-company">State Farm</span>
+                </div>
+                <span class="timeline-date">Summer 2025</span>
+                <p>First internship role working with enterprise technology systems.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Programming Instructor</h3>
+                    <span class="timeline-company">Local STEM Summer Camp</span>
+                </div>
+                <span class="timeline-date">2023</span>
+                <p>Co-taught programming section for underprivileged youths.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>FTC Robotics Team Developer</h3>
+                    <span class="timeline-company">FIRST Robotics Competition</span>
+                </div>
+                <span class="timeline-date">2022-2024</span>
+                <p>Developed scouting software for FRC team that competed at World Championships in 2024 and 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <h3>Computer Science & Artificial Intelligence</h3>
+            <p class="education-detail">Currently studying</p>
+            <p class="education-description">
+                Focus areas include Agentic Large Reasoning Models, Natural Language Processing,
+                Distributed Learning, and Explainable AI.
+            </p>
+        </div>
+        <div class="education-item">
+            <h3>Homeschool Education</h3>
+            <p class="education-detail">Mother of Divine Grace School</p>
+            <p class="education-description">
+                Dallas, Texas
+            </p>
+        </div>
+    </section>
+
+    <section id="honors" class="section">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>USACO Gold Division</h3>
+                    <span class="timeline-company">USA Computing Olympiad</span>
+                </div>
+                <span class="timeline-date">Feb. 2025</span>
+                <p>Promoted to Gold Division; previously promoted to Silver in Dec. 2023, placing 1022 out of 9707 pre-college competitors worldwide.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>NCFCA Team Policy Debate</h3>
+                    <span class="timeline-company">National Christian Forensics & Communications Association</span>
+                </div>
+                <span class="timeline-date">2024-2025</span>
+                <p>Ranked 2nd Team Policy Speaker out of ~110 competitors at the first National Mixer tournament of the 24-25 season. Previously placed 8th out of ~42 teams at first tournament in Jan. 2024.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Connect</h2>
+        <div class="personal-blob">
+            <p>I live in Dallas, Texas, and homeschool with Mother of Divine Grace School. I enjoy competitive programming, speech and debate, playing chess, and studying Latin. I also used to play ice hockey, but now my little sister carries the torch in the AAA boys' leagues (Check out her YT channel! <a href="https://www.youtube.com/@minachenhockeyplayer/shorts" class="accent-link">Mina Chen Hockey Player</a>).</p>
+        </div>
+        <ul class="contact-full-list">
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <a href="mailto:alexander.kai.chen@gmail.com">alexander.kai.chen@gmail.com</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+                Discord: @alxv07
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
+                <a href="https://www.linkedin.com/in/alexander-kai-chen-504893267" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <a href="https://x.com/alxv07" target="_blank">Twitter/X</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <a href="https://github.com/AlxV07" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                    <path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/>
+                </svg>
+                <a href="https://openreview.net/profile?id=%7EAlexander_Kai_Chen1" target="_blank">OpenReview</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    <path d="M2 12h20"/>
+                </svg>
+                <a href="https://orcid.org/0009-0007-1832-7051" target="_blank">ORCID</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                </svg>
+                <a href="https://www.youtube.com/@alxv07" target="_blank">YouTube</a>
+            </li>
+            <li>
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="7" r="3"/>
+                    <path d="M9 21h6v-4H9z"/>
+                    <path d="M12 10v7"/>
+                    <path d="M8 14h8"/>
+                    <path d="M7 21h10"/>
+                </svg>
+                <a href="https://www.chess.com/member/alxv07u" target="_blank">chess.com</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="blog" class="section">
+        <h2 class="section-title">Blog</h2>
+        <p class="blog-intro">
+            Posts with <strong>bolded/italicized</strong> titles are more substantial writings; posts with non-bolded titles are casual updates.
+        </p>
+        <div class="blog-list">
+            <a class="blog-item substantial-blog" href="/blog/ia_update">11/17/2025 - Camera Ready @ NeurIPS ER Workshop Author's Notes: Project Motivation & Future Work</a>
+            <a class="blog-item" href="/blog/ia_first_acceptance">09/23/2025 - iOS as Acceleration accepted @ NeurIPS 2025 Workshop</a>
+            <a class="blog-item" href="/blog/summer-2025-update">07/10/2025 - Mid-Summer 2025 Update</a>
+            <a class="blog-item" href="/blog/usaco-gold-obtained">03/02/2025 - Promoting To USACO Gold Division</a>
+            <a class="blog-item" href="/blog/flint-qualifier2025-tourney">01/22/2025 - Results @ Flint 2025 Qualifier</a>
+            <a class="blog-item substantial-blog" href="/blog/ps-ftc1">01/09/2025 - Similarities Between Prefix Sums and The 1st Fundamental Theorem of Calculus</a>
+            <a class="blog-item" href="/blog/onlinefall2024-tourney">12/31/2024 - Results @ Fall 2024 National Mixer</a>
+            <a class="blog-item" href="/blog/first-internship">11/01/2024 - My First Internship</a>
+            <a class="blog-item substantial-blog" href="/blog/utd-ml-vs-xai">09/15/2024 - Studying ML vs. XAI @ UTD ALPS Lab</a>
+            <a class="blog-item" href="/blog/presummer-24-update">05/24/2024 - PreSummer Update</a>
+            <a class="blog-item" href="/blog/ncfca-regionals-24">05/07/2024 - Strong Conclusion @ Farmers Branch Regional Championship</a>
+            <a class="blog-item" href="/blog/ncfca-ft-worth-24">03/20/2024 - 17/61 @ Ft. Worth National Mixer</a>
+        </div>
+    </section>
+</main>
 
 <footer>
-    &copy; 2025 Alexander Kai Chen
+    <p>&copy; 2026 Alexander Kai Chen</p>
 </footer>
 
-<script src="/script.js?v=1.1"></script>
+<script src="/script.js?v=2.0"></script>
 
 </body>
 </html>
