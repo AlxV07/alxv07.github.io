@@ -42,8 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            // Only prevent default for hash links (internal navigation)
+            if (!href || !href.startsWith('#')) {
+                return;
+            }
             e.preventDefault();
-            const targetId = link.getAttribute('href');
+            const targetId = href;
             const targetSection = document.querySelector(targetId);
             if (targetSection) {
                 targetSection.scrollIntoView({
