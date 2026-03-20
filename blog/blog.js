@@ -1,13 +1,3 @@
-function yearsSince(birthdate) {
-    const currentDate = new Date();
-    let age = currentDate.getFullYear() - birthdate.getFullYear();
-    if (currentDate.getMonth() < birthdate.getMonth() ||
-        (currentDate.getMonth() === birthdate.getMonth() && currentDate.getDate() < birthdate.getDate())) {
-        age--;
-    }
-    return age;
-}
-
 function initTheme() {
     const storedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -29,15 +19,6 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    
-    const pfp = document.querySelector('.pfp');
-    if (pfp) {
-        pfp.style.opacity = 0;
-        setTimeout(() => {
-            pfp.style.transition = 'opacity 0.8s ease';
-            pfp.style.opacity = 1;
-        }, 100);
-    }
 
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
@@ -50,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth',
                     block: 'start'
                 });
-                history.pushState(null, '', targetId);
             }
         });
     });
@@ -59,29 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navLogo) {
         navLogo.addEventListener('click', (e) => {
             e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            history.pushState(null, '', '#');
+            window.location.href = '/';
         });
     }
-
-    const sectionTitles = document.querySelectorAll('.section-title');
-    sectionTitles.forEach(title => {
-        title.style.cursor = 'pointer';
-        title.addEventListener('click', (e) => {
-            const section = e.target.closest('.section');
-            if (section) {
-                const targetId = `#${section.id}`;
-                section.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                history.pushState(null, '', targetId);
-            }
-        });
-    });
 
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {

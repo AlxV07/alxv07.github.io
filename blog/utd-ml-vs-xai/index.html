@@ -1,92 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/imgs/GlaucusProfile.png">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/imgs/PagewoodParkPFP.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studying ML vs. XAI @ UTD ALPS Lab - Alexander Kai Chen</title>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css?v=1.1">
-    <script src="script.js?v=1.1"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="/blog/blog.css?v=1.0">
+    <script src="/blog/blog.js?v=1.0"></script>
 </head>
 <body>
 
-<section class="blog-post" id="#">
-    <a class="blog-post-header" href="#">Studying ML vs. XAI @ UTD ALPS Lab</a><br><br>
-    <h4>09/15/2024</h4>
-
-    <div>
-        “While at a conference a few weeks back, I spent an interesting evening with a grain of salt.”
-        This was one of many nonsensical phrases posted by the user “Mark V. Shaney” on Usenet in the 1980s.
-        Many readers thought Mark was a deranged person, but he was actually a program designed by Rob Pike.
-        Pike’s program was an early form of AI which “learned” to construct sentences by calculating which
-        words often went together in text.  Decades later, more sophisticated AI programs like ChatGPT have emerged.
-        With exponentially larger datasets and more powerful computing resources, these programs are far more capable.
-        Today’s chatbots can easily fool readers with extremely human-like responses.  However, AI programs still
-        make errors reminiscent of Mark V. Shaney.  For example, when asked on September 11th about the date of the
-        Trump v. Harris presidential debate, ChatGPT responded, “The Trump vs. Harris debate you’re referring to
-        took place on September 17, 2024.”  Why do such advanced programs like ChatGPT still make mistakes like
-        this?  The reason is because they lack reasoning.
-
-        <br><br>
-
-        The flaw lies in the “machine learning” approach this type of AI follows.  It attempts to build and adjust
-        mathematical functions to model training data and then apply these functions to the given task.
-        Conceptually, this approach is the same as that which Mark V. Shaney followed. Mark used a Markov chain
-        to model which words often went together in sentences and then generated new sentences from that information.
-        The process involves no reasoning; it is purely statistics and cannot be explained.  We humans do not guess
-        at conclusions by using mathematical functions; we deduce conclusions using logic and reason.  When we
-        reason, we understand why our conclusions are valid.  Machine learning doesn’t reason, and this lack of
-        reason raises serious concerns about the reliability of its output.  How can we trust a program if we’re
-        not able to explain what it produces?
-
-        <br><br>
-
-        A plausible solution lies in “explainable AI” (XAI) which, instead of relying on statistics, models
-        reasoning directly.  This summer, I studied at the UT Dallas Applied Logic and Programming Systems (ALPS)
-        Lab where we explored how the human thought process could be formalized using the logic programming
-        language Prolog.  By representing knowledge as programmatic facts and rules in Prolog, we could model
-        an explainable decision process.  XAI utilizes this approach:  instead of mathematical functions,
-        XAI uses logic to actually derive conclusions.  With this AI, one can actually see the program’s
-        “thought process”, the facts and rules the program followed to derive its conclusion.  XAI has the
-        potential to be utilized in the construction of much more powerful AI programs.
-
-        <br><br>
-
-        XAI is already used in practice together with machine learning.  “Reliable chatbots” use LLMs to
-        extract facts which are then passed to an XAI to “understand”.  The XAI backend keeps chatbots
-        in check from hallucinating while correctly answering requests.  Professor Gopal Gupta, who leads
-        the UT Dallas ALPS Lab, presented the “FOLD-SE” algorithm which generates rule sets for XAI to perform
-        tabular classification tasks, offering an explainable alternative to pure machine learning classification.
-        Another ongoing project “Rules as Code”, by Jason Morris, aims to use XAI to automate law and legal
-        services.  XAI overcomes the “black-box barrier” of machine learning, opening the door to reliable
-        automation of decision-making tasks.  Prolog programs appeared around the same time as Markov chains,
-        and we’ve already seen how the latter has grown with modern advancement.
-        If Mark V. Shaney could grow into ChatGPT, what could advancement in XAI lead to?
-
-        <br><br>
-
-        References:
-        <br>
-        Mark V. Shaney: <a href="https://en.wikipedia.org/wiki/Mark_V._Shaney">https://en.wikipedia.org/wiki/Mark_V._Shaney</a>
-        <br>
-        General XAI: <a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence">https://en.wikipedia.org/wiki/Explainable_artificial_intelligence</a>
-        <br>
-        FOLD-SE: <a href="https://arxiv.org/abs/2208.07912">https://arxiv.org/abs/2208.07912</a>
-        <br>
-        Rules As Code: <a href="https://law.mit.edu/pub/blawxrulesascodedemonstration/release/1">https://law.mit.edu/pub/blawxrulesascodedemonstration/release/1</a>
-        <br>
-
-        <br>
-
-        <div style="display: flex; justify-content: center;">
-            <img src="utd_alps_2024.png" alt="ALPS 2024 Completion Certificate" style="width: 70%">
+<header>
+    <nav class="navbar">
+        <a href="/" class="nav-logo">Alexander Kai Chen</a>
+        <div class="nav-links">
+            <a href="/resume/alexanderkaichen.pdf" class="nav-link">Resume</a>
+            <a href="/#skills" class="nav-link">Skills</a>
+            <a href="/#experience" class="nav-link">Experience</a>
+            <a href="/#education" class="nav-link">Education</a>
+            <a href="/#honors" class="nav-link">Honors</a>
+            <a href="/#connect" class="nav-link">Connect</a>
+            <a href="/#blog" class="nav-link">Blog</a>
         </div>
-    </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
+</header>
 
-</section>
+<main>
+    <a href="/#blog" class="back-link">&larr; Back to Blog</a>
+    
+    <article class="blog-post">
+        <h1 class="blog-post-header">Studying ML vs. XAI @ UTD ALPS Lab</h1>
+        <p class="blog-post-date">09/15/2024</p>
+        
+        <div class="blog-post-content">
+            <p>
+                “While at a conference a few weeks back, I spent an interesting evening with a grain of salt.” This was one of many nonsensical phrases posted by the user “Mark V. Shaney” on Usenet in the 1980s. Many readers thought Mark was a deranged person, but he was actually a program designed by Rob Pike. Pike’s program was an early form of AI which “learned” to construct sentences by calculating which words often went together in text. Decades later, more sophisticated AI programs like ChatGPT have emerged. With exponentially larger datasets and more powerful computing resources, these programs are far more capable. Today’s chatbots can easily fool readers with extremely human-like responses. However, AI programs still make errors reminiscent of Mark V. Shaney. For example, when asked on September 11th about the date of the Trump v. Harris presidential debate, ChatGPT responded, “The Trump vs. Harris debate you’re referring to took place on September 17, 2024.” Why do such advanced programs like ChatGPT still make mistakes like this? The reason is because they lack reasoning.
+            </p>
+            
+            <p>
+                The flaw lies in the “machine learning” approach this type of AI follows. It attempts to build and adjust mathematical functions to model training data and then apply these functions to the given task. Conceptually, this approach is the same as that which Mark V. Shaney followed. Mark used a Markov chain to model which words often went together in sentences and then generated new sentences from that information. The process involves no reasoning; it is purely statistics and cannot be explained. We humans do not guess at conclusions by using mathematical functions; we deduce conclusions using logic and reason. When we reason, we understand why our conclusions are valid. Machine learning doesn’t reason, and this lack of reason raises serious concerns about the reliability of its output. How can we trust a program if we’re not able to explain what it produces?
+
+            </p>
+            
+            <p>
+                A plausible solution lies in “explainable AI” (XAI) which, instead of relying on statistics, models reasoning directly. This summer, I studied at the UT Dallas Applied Logic and Programming Systems (ALPS) Lab where we explored how the human thought process could be formalized using the logic programming language Prolog. By representing knowledge as programmatic facts and rules in Prolog, we could model an explainable decision process. XAI utilizes this approach: instead of mathematical functions, XAI uses logic to actually derive conclusions. With this AI, one can actually see the program’s “thought process”, the facts and rules the program followed to derive its conclusion. XAI has the potential to be utilized in the construction of much more powerful AI programs.
+
+            </p>
+            
+            <p>
+                XAI is already used in practice together with machine learning. “Reliable chatbots” use LLMs to extract facts which are then passed to an XAI to “understand”. The XAI backend keeps chatbots in check from hallucinating while correctly answering requests. Professor Gopal Gupta, who leads the UT Dallas ALPS Lab, presented the “FOLD-SE” algorithm which generates rule sets for XAI to perform tabular classification tasks, offering an explainable alternative to pure machine learning classification. Another ongoing project “Rules as Code”, by Jason Morris, aims to use XAI to automate law and legal services. XAI overcomes the “black-box barrier” of machine learning, opening the door to reliable automation of decision-making tasks. Prolog programs appeared around the same time as Markov chains, and we’ve already seen how the latter has grown with modern advancement. If Mark V. Shaney could grow into ChatGPT, what could advancement in XAI lead to?
+
+            </p>
+            
+            <p><strong>References:</strong><br>
+            Mark V. Shaney: <a href="https://en.wikipedia.org/wiki/Mark_V._Shaney" target="_blank">https://en.wikipedia.org/wiki/Mark_V._Shaney</a><br>
+            General XAI: <a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence" target="_blank">https://en.wikipedia.org/wiki/Explainable_artificial_intelligence</a><br>
+            FOLD-SE: <a href="https://arxiv.org/abs/2208.07912" target="_blank">https://arxiv.org/abs/2208.07912</a><br>
+            Rules As Code: <a href="https://law.mit.edu/pub/blawxrulesascodedemonstration/release/1" target="_blank">https://law.mit.edu/pub/blawxrulesascodedemonstration/release/1</a></p>
+            
+            <figure style="text-align: center; margin: 2rem 0;">
+                <img src="utd_alps_2024.png" alt="ALPS 2024 Completion Certificate" style="max-width: 700px; width: 70%;">
+            </figure>
+        </div>
+    </article>
+</main>
+
 <footer>
-    &copy; 2025 Alexander Kai Chen
+    <p>&copy; 2026 Alexander Kai Chen</p>
 </footer>
 
 </body>
