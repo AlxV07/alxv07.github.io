@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/imgs/GlaucusProfile.png">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/imgs/PagewoodParkPFP.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Alexander Kai Chen</title>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css?v=2.0">
 </head>
 <body>
 
-<nav>
-    <div class="nav-left nav-a"><a class="nav-a" style="margin: 0; padding: 0" href="/">Alexander Kai Chen</a></div>
-    <div class="nav-center">
-        <a class="nav-a" href="#about" >About</a>
-        <a class="nav-a" href="#accomplishments">Accomplishments</a>
-        <a class="nav-a" href="#activities">Activities</a>
-        <a class="nav-a" href="#connect">Connect</a>
-        <a class="nav-a" href="#blog">Blog</a>
-    </div>
-    <a class="nav-a nav-right" href="#">To Top (↑)</a>
-</nav>
+<header>
+    <nav class="navbar">
+        <a href="/" class="nav-logo">Alexander Kai Chen</a>
+        <div class="nav-links">
+            <a href="/resume/alexanderkaichen.pdf" class="nav-link">Resume</a>
+            <a href="/#skills" class="nav-link">Skills</a>
+            <a href="/#experience" class="nav-link">Experience</a>
+            <a href="/#education" class="nav-link">Education</a>
+            <a href="/#honors" class="nav-link">Honors</a>
+            <a href="/#connect" class="nav-link">Connect</a>
+            <a href="/#blog" class="nav-link">Blog</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
+</header>
 
-<div style="display: flex; justify-content: center; flex-direction: column; text-align: center">
-    <br><br>
+<main>
+    <section class="hero">
+        <div class="hero-content" style="flex-direction: column; text-align: center;">
+            <div class="hero-text">
+                <h1>404</h1>
+                <p class="hero-subtitle">Page Not Found</p>
+                <p class="hero-description">
+                    The page you're looking for doesn't exist or has been moved.
+                    Navigate back to the homepage using the links above.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <h3>404: Page Not Found</h3>
+<footer>
+    <p>&copy; 2026 Alexander Kai Chen</p>
+</footer>
 
-    <br><br>
-
-    Select an item from the navigation bar to return to the homepage.
-</div>
+<script src="/script.js?v=2.0"></script>
 
 </body>
 </html>
