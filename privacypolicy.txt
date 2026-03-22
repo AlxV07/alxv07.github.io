@@ -1,0 +1,16 @@
+=== Privacy Policy ===
+
+`https://alxv07.github.io/*`
+
+Last updated: March 21st, 2026
+
+This website uses Google Analytics to help analyze how visitors use the site.
+Google Analytics uses "cookies," small text files in-browser on your computer, to collect standard internet log information and visitor behavior information anonymously.
+The information generated about your use of the website (including your IP address) is standardly transmitted by Google.
+This information is used to evaluate visitors' use of the website and to compile statistical reports on website activity for this site.
+You can prevent Google Analytics from collecting your data by installing the official Google Analytics Opt-out Browser Add-on.
+For more information on how Google processes your data, visit how Google (https://policies.google.com/technologies/partner-sites) uses data when you use our partners' sites or apps.
+
+Hosting: This site is hosted on GitHub Pages. You can find their privacy policy in their respective privacy statements.
+
+Questions can be emailed to: alexander.kai.chen@gmail.com

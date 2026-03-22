@@ -470,6 +470,14 @@ footer p {
     color: var(--text-muted);
 }
 
+footer .footer-link {
+    color: var(--accent-color);
+}
+
+footer .footer-link:hover {
+    text-decoration: underline;
+}
+
 /* ======= */
 
 @media (max-width: 768px) {
