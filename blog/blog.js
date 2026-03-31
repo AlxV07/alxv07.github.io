@@ -20,6 +20,14 @@ function toggleTheme() {
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
 
+    const firstArticle = document.querySelector('article');
+    if (firstArticle) {
+        const tagline = document.createElement('p');
+        tagline.className = 'green';
+        tagline.textContent = 'Written by humans, for humans.';
+        firstArticle.parentNode.insertBefore(tagline, firstArticle);
+    }
+
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
