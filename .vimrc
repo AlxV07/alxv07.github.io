@@ -9,8 +9,9 @@ set background=dark
 if has('termguicolors')
 	set termguicolors
 endif
-"let g:everforest_background = 'hard' "'medium'=default 
-let g:everforest_better_performance = 1 
+"let g:everforest_background = 'hard' "'medium'=default
+" Install: `git clone https://github.com/sainnhe/everforest.git ~/.vim/pack/plugins/start/everforest`
+let g:everforest_better_performance = 1
 packadd! everforest 
 colorscheme everforest
 
