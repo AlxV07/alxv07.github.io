@@ -11,6 +11,7 @@ if has('termguicolors')
 endif
 "let g:everforest_background = 'hard' "'medium'=default
 " Install: `git clone https://github.com/sainnhe/everforest.git ~/.vim/pack/plugins/start/everforest`
+" For NVIM: `git clone https://github.com/sainnhe/everforest.git ~/.local/share/nvim/site/pack/plugins/opt/everforest`
 let g:everforest_better_performance = 1
 packadd! everforest 
 colorscheme everforest
