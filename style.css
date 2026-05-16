@@ -498,6 +498,17 @@ footer .footer-link:hover {
         padding: 1rem;
         flex-direction: column;
         gap: 1rem;
+        position: relative;
+    }
+
+    .nav-logo {
+        padding-right: 3rem; /* Make room for absolute theme-toggle */
+    }
+
+    .theme-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 
     .nav-links {
