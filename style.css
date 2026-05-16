@@ -502,7 +502,9 @@ footer .footer-link:hover {
     }
 
     .nav-logo {
-        padding-right: 3rem; /* Make room for absolute theme-toggle */
+        padding: 0.5rem 0; /* Match theme-toggle vertical space */
+        width: 100%;
+        text-align: center;
     }
 
     .theme-toggle {
