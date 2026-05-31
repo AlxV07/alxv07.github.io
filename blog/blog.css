@@ -164,7 +164,7 @@ main {
 }
 
 .blog-post-header:hover {
-    color: var(--accent-color);
+    /*color: var(--accent-color);*/
 }
 
 .blog-post-date {
