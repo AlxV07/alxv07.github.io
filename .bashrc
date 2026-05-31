@@ -3,8 +3,8 @@
 
 set -o vi
 
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 
 alias "gp"="git push"
 alias "gc"="git commit"
