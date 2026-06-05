@@ -1,6 +1,7 @@
 # WINDOWS Git Bash
 
-Font=JetBrains Mono NL Regular  # needs installation from JetBrains website
+# needs installation from JetBrains website
+Font=JetBrains Mono NL 
 BackgroundColour=253,246,227
 CursorType=block 
 WindowShortcuts=no
