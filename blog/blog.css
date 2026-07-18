@@ -12,7 +12,7 @@
     --text-muted: #6a6a6a;
     --border-color: #e5e5e5;
     --border-light: #f0f0f0;
-    --accent-color: #2d6a4f;
+    --accent-color: #318334;
     --hover-bg: #f0f0f0;
 }
 
@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: times;
+    font-family: 'Inter', sans-serif;
     color: var(--text-primary);
     background-color: var(--bg-primary);
     line-height: 1.6;
